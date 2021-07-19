@@ -19,29 +19,5 @@ for ($x = 0; $x <= $num; $x++){
 }
 echo -1 ." " .-1 ." " .-1;
 
-
-
-
-// if(10000 <= $sum && $num != 0){
-//     $cntX = floor($sum/10000);
-//     $sum -= (10000*$cntX);
-//     $num -= $cntX; 
-// }
-// if(5000 <= $sum && $num != 0){
-//     $cntY = floor($sum/5000);
-//     $sum -= (5000*$cntY);
-//     $num -= $cntY; 
-// }
-// if(1000 <= $sum && $num != 0){
-//     $cntZ = floor($sum/1000);
-//     $sum -= (1000*$cntZ);
-//     $num -= $cntZ; 
-// }
-// if($num == 0 && $sum != 0){
-//     $cntX = -1;
-//     $cntY = -1;
-//     $cntZ = -1;
-// }
-
 ?>
 
