@@ -27,14 +27,31 @@
 
         $ml = 0;//左端を定義
         
-        $mp = $k;
+        $count_p = $k;
         //最小のMで切れるか
         for($i=0; $i<$c; $i++){//切り込みの数以下で
             if($a[$i]-$left >= $min){//$a[$i]　==>> 切り分ける間隔
-                $cleft = $a[$i];//はじの位置を切った位置に設定
+                $ml = $a[$i];//はじの位置を切った位置に設定
+                $count_p = $count_p-1;//取り出す個数を調整
             }
+            if($count_p == 0){//取り出す個数が0になったら
+                if($l - $a[$i] < $min){//最後のカットサイズが最小より小さいか否か
+                    return false;
+                }else{
+                    return true;
+                }
+            }    
         }
     }
+
+    function serch(){
+        global $c;
+        global $l;
+        global $a;
+        // ////////
+    }
+
+
 
 
     ?>
